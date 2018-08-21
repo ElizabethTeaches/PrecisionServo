@@ -35,6 +35,10 @@ void loop() {
 }
 ```
 
+## Installation
+
+Download the source (clone/download button or go to releases). Extract the zip anywhere, copy the "PrecisionServo" folder into "Documents/Arduino/libraries" such that "Documents/Arduino/libraries/PrecisionServo/PrecisionServo.h" is a file.
+
 ## Usage explained
 
 The servo manager should be setup with the number of unique servos on the circuit first, with `ServoManager::setup`. Then, create each servo one at a time by calling `ServoManager::createServo` with the corresponding pin. The returned servo is ready to go, however you might want to change the setting (see Settings below) using `PrecisionServo->setSetting`. Every servo may have its own setting.
